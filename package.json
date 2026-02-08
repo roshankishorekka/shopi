@@ -1,30 +1,12 @@
 {
-  "name": "vinwear",
-  "private": true,
-  "version": "0.0.0",
+  "name": "shopi",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node index.js",
+    "install-server": "cd server && npm install"
   },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^6.2.1",
-    "svelte": "^5.39.6",
-    "vite": "npm:rolldown-vite@7.1.14"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.1.14"
-  },
-  "dependencies": {
-    "@duckdb/duckdb-wasm": "^1.30.0",
-    "animejs": "^3.2.2",
-    "apache-arrow": "^21.1.0",
-    "gsap": "^3.13.0",
-    "lucide-svelte": "^0.553.0",
-    "svelte-routing": "^2.13.0",
-    "svelte-styled-components": "^0.0.1",
-    "three": "^0.181.0",
-    "tslib": "^2.8.1"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
