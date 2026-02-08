@@ -10,6 +10,7 @@
   import Login from "./pages/Login.svelte";
   import Signup from "./pages/Signup.svelte";
   import Profile from "./pages/Profile.svelte";
+  import Admin from "./pages/Admin.svelte";
   import { onMount } from "svelte";
 
   let path = window.location.pathname;
@@ -73,6 +74,8 @@
       <Signup />
     {:else if path === "/profile"}
       <Profile />
+    {:else if path === "/admin"}
+      <Admin />
     {:else}
       <div class="not-found">
         <h1>404 - Page Not Found</h1>

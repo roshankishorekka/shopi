@@ -1,0 +1,10 @@
+# Railway Deployment Configuration
+# This file tells Railway where to find the backend
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "npm start"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
